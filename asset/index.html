@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>scanner.gonzalo123.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">scanner.gonzalo123.com</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="jumbotron">
+        <div id="format"></div>
+        <div id="text"></div>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-6">
+            <h4>How to use it</h4>
+            <p>First install app in your mobile device</p>
+            <div class="media-left media-middle">
+                <!--
+                <a href="#">
+                    <img class="media-object" src="media/googlePlay.jpg" alt="googlePlay">
+                </a>
+                -->
+                <a href="https://dl.dropboxusercontent.com/u/17441469/scanner.apk">scanner.apk</a>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <p>And then pair your application device with this webpage using the following QR code. To do this you need to scan the QR code with the application</p>
+            <div id="qrcode"></div>
+            <p>And that's all. Each code scanned with the application will appear here</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; Gonzalo Ayuso</p>
+    </footer>
+
+</div>
+
+<script src="js/socket.io-1.3.7.js"></script>
+<script src="js/qrcode.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
