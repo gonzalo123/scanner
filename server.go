@@ -24,7 +24,7 @@ func main() {
     http.Handle("/socket.io/", server)
 
     http.HandleFunc("/token", func(w http.ResponseWriter, r *http.Request) {
-        secret := "a60fa90b948b0f3ae204d89c01fab268"
+        secret := "a60fa90b948b0f3ae204d89c01fab268" // super secret key
         token := r.URL.Query().Get("token")
         if secret == r.URL.Query().Get("_secret") {
             m := make(map[string]interface{})
